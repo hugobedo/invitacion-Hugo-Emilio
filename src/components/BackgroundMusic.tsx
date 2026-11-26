@@ -237,7 +237,8 @@ export const BackgroundMusic = forwardRef<BackgroundMusicHandle, BackgroundMusic
               fs: 0,
               modestbranding: 1,
               playsinline: 1,
-              rel: 0
+              rel: 0,
+              origin: typeof window !== 'undefined' ? window.location.origin : undefined
             },
             events: {
               onReady: (event) => {

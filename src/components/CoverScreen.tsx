@@ -92,7 +92,7 @@ export const CoverScreen: React.FC<CoverScreenProps> = ({ isOpen, onOpen }) => {
         {/* Official Cover Photo of La Granja de Zenón */}
         <div className="relative mx-auto mb-6 w-full max-w-md aspect-[16/9] rounded-2xl overflow-hidden bg-gradient-to-br from-sky-100 to-emerald-100 border border-amber-200/70">
           <img
-            src="/assets/aistudio/zenon_2a5f8b0b.jpg"
+            src={`${import.meta.env.BASE_URL}assets/aistudio/zenon_2a5f8b0b.jpg`}
             alt="La Granja de Zenón - Portada Primer Añito de Hugo Emilio"
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105"
